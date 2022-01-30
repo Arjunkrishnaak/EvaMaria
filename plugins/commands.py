@@ -47,8 +47,8 @@ async def start(client, message):
             InlineKeyboardButton('INLINE🔎', switch_inline_query_current_chat=''),
             InlineKeyboardButton('▪️movie channel ▪️', url='https://t.me/+Zj6B-W1tdBg4ZmZl')
             ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('Owner ⚙️', url='https://t.me/Request_flix_official'),
+            InlineKeyboardButton('REPO 👞', url='https://github.com/EvamariaTG/EvaMaria')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -85,13 +85,13 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('▪️ MOVIE GROUP ▪️', url='https://t.me/Request_flix')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
+            InlineKeyboardButton('INLINE🔎', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('▪️movie channel ▪️', url='https://t.me/+Zj6B-W1tdBg4ZmZl')
             ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('Owner ⚙️', url='https://t.me/Request_flix_official'),
+            InlineKeyboardButton('REPO 👞', url='https://github.com/EvamariaTG/EvaMaria')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
